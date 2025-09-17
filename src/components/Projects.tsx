@@ -32,22 +32,22 @@ export const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 px-6 bg-secondary/20">
+    <section id="projects" className="py-16 sm:py-20 px-4 sm:px-6 bg-secondary/20">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 gradient-text">
             Featured Projects
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
             Here are some of my recent projects that showcase my skills and experience
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {projects.map((project, index) => (
             <Card 
               key={index}
-              className="overflow-hidden glass-card hover-lift animate-scale-in group border-border/20"
+              className="overflow-hidden glass-card hover-lift animate-scale-in group border-border/20 h-full flex flex-col"
               style={{animationDelay: `${index * 0.1}s`}}
             >
               <div className="aspect-video overflow-hidden">
@@ -55,51 +55,52 @@ export const Projects = () => {
                   src={project.image} 
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  loading="lazy"
                 />
               </div>
               
-              <div className="p-6 space-y-4">
-                <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
+              <div className="p-4 sm:p-5 md:p-6 space-y-3 sm:space-y-4 flex flex-col flex-grow">
+                <h3 className="text-lg sm:text-xl font-semibold group-hover:text-primary transition-colors line-clamp-2">
                   {project.title}
                 </h3>
                 
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed flex-grow line-clamp-3">
                   {project.description}
                 </p>
                 
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-1.5 sm:gap-2 mt-2">
                   {project.tags.map((tag, tagIndex) => (
                     <Badge 
                       key={tagIndex} 
                       variant="secondary"
-                      className="text-xs bg-primary/10 text-primary border-primary/20"
+                      className="text-[10px] sm:text-xs px-1.5 py-0.5 sm:px-2 sm:py-1 bg-primary/10 text-primary border-primary/20"
                     >
                       {tag}
                     </Badge>
                   ))}
                 </div>
                 
-                <div className="flex space-x-2 pt-4">
+                <div className="flex space-x-2 pt-3 sm:pt-4">
                   <Button 
                     size="sm" 
                     variant="outline"
-                    className="flex-1 glass-card hover:bg-primary/20"
+                    className="flex-1 glass-card hover:bg-primary/20 text-xs sm:text-sm h-8 sm:h-9"
                     asChild
                   >
-                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Live Demo
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
+                      <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4 mr-1.5" />
+                      <span>Demo</span>
                     </a>
                   </Button>
                   <Button 
                     size="sm" 
                     variant="outline"
-                    className="flex-1 glass-card hover:bg-secondary/40"
+                    className="flex-1 glass-card hover:bg-secondary/40 text-xs sm:text-sm h-8 sm:h-9"
                     asChild
                   >
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                      <Github className="w-4 h-4 mr-2" />
-                      Code
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
+                      <Github className="w-3 h-3 sm:w-4 sm:h-4 mr-1.5" />
+                      <span>Code</span>
                     </a>
                   </Button>
                 </div>
