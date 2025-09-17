@@ -4,15 +4,15 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-10 sm:py-12 px-4 sm:px-6 border-t border-border/20">
+    <footer className="py-8 sm:py-10 lg:py-12 px-3 sm:px-4 lg:px-6 border-t border-border/20">
       <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col sm:flex-row justify-between items-center space-y-6 sm:space-y-0">
+        <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
           <div className="text-center sm:text-left">
-            <h3 className="text-lg sm:text-xl font-semibold gradient-text mb-1 sm:mb-2">Ananthula Sai</h3>
-            <p className="text-sm sm:text-base text-muted-foreground">Full Stack Developer</p>
+            <h3 className="text-base sm:text-lg lg:text-xl font-semibold gradient-text mb-0.5 sm:mb-1 lg:mb-2">Ananthula Sai</h3>
+            <p className="text-xs sm:text-sm lg:text-base text-muted-foreground">Full Stack Developer</p>
           </div>
           
-          <div className="flex space-x-4 sm:space-x-6">
+          <div className="flex space-x-3 sm:space-x-4 lg:space-x-6">
             <a 
               href="https://github.com/ananthulasaigoud" 
               target="_blank"
@@ -41,9 +41,9 @@ export const Footer = () => {
           </div>
         </div>
         
-        <div className="mt-8 pt-6 sm:pt-8 border-t border-border/20 text-center">
-          <p className="text-xs sm:text-sm text-muted-foreground">
-            {currentYear} Ananthula Sai. All rights reserved.
+        <div className="mt-6 sm:mt-8 pt-4 sm:pt-6 lg:pt-8 border-t border-border/20 text-center">
+          <p className="text-xs sm:text-sm text-muted-foreground px-4">
+            {currentYear} Ananthula Sai. All rights reserved. • Made with ❤️
           </p>
         </div>
       </div>
