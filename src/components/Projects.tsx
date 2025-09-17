@@ -7,10 +7,10 @@ export const Projects = () => {
   const projects = [
     {
       title: "Ananth Farms",
-      description: "A modern agricultural business website showcasing farm products and services. Built with React and modern web technologies for optimal user experience.",
+      description: "A modern agriculture management website that helps farmers track expenses, incomes, and payments with detailed analytics for better financial decision-making. Built with React and modern web technologies for optimal user experience.",
       tags: ["React", "Vite", "TypeScript", "Supabase"],
       liveUrl: "http://ananthfarms.netlify.app/",
-      githubUrl: "https://github.com/ananthulasaigoud",
+      githubUrl: "https://github.com/ananthulasaigoud/Ananth_Farms_Demo_Repo",
       image: "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=500&h=300&fit=crop&crop=entropy&auto=format"
     },
     {
@@ -18,15 +18,15 @@ export const Projects = () => {
       description: "A delightful food service platform featuring menu displays and ordering functionality. Responsive design with modern UI/UX principles.",
       tags: ["React", "Node.js", "Supabase", "Tailwind"],
       liveUrl: "http://ananthdelights.netlify.app/",
-      githubUrl: "https://github.com/ananthulasaigoud",
+      githubUrl: "https://github.com/ananthulasaigoud/Ananth_Delights_Demo_repo",
       image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&h=300&fit=crop&crop=entropy&auto=format"
     },
     {
-      title: "TFI Attendance System",
+      title: "Smart Attendance System (For Client)",
       description: "A comprehensive attendance management system for educational institutions. Features real-time tracking and reporting capabilities.",
       tags: ["React", "TypeScript", "SQL", "Vite"],
       liveUrl: "https://tfiattendance.netlify.app/",
-      githubUrl: "https://github.com/ananthulasaigoud",
+      githubUrl: "https://github.com/ananthulasaigoud/Smart-Attendance-Demo-Repo",
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=300&fit=crop&crop=entropy&auto=format"
     }
   ];

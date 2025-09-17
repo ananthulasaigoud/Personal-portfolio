@@ -43,7 +43,7 @@ export const Footer = () => {
         
         <div className="mt-8 pt-8 border-t border-border/20 text-center">
           <p className="text-muted-foreground flex items-center justify-center gap-2">
-            © {currentYear} Ananthula Sai. Made with <Heart className="w-4 h-4 text-red-500" /> using React & Tailwind CSS
+            © {currentYear} Ananthula Sai.
           </p>
         </div>
       </div>
