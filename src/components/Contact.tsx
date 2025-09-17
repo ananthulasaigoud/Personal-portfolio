@@ -115,36 +115,36 @@ export const Contact = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
           {/* Contact Information */}
-          <div className="space-y-6 sm:space-y-8">
+          <div className="space-y-4 sm:space-y-6 lg:space-y-8">
             <div>
-              <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">Let's Connect</h3>
-              <p className="text-muted-foreground leading-relaxed mb-6 sm:mb-8 text-sm sm:text-base">
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold mb-3 sm:mb-4 lg:mb-6">Let's Connect</h3>
+              <p className="text-muted-foreground leading-relaxed mb-4 sm:mb-6 lg:mb-8 text-sm sm:text-base">
                 I'm always open to discussing new opportunities and interesting projects. 
                 Whether you have a question about my work or want to collaborate, don't hesitate to reach out!
               </p>
             </div>
             
-            <div className="space-y-3 sm:space-y-4">
+            <div className="grid gap-2 sm:gap-3 lg:gap-4">
               {contactInfo.map((item, index) => (
                 <Card 
                   key={index}
-                  className="p-4 sm:p-6 glass-card hover-lift animate-scale-in border-border/20"
+                  className="p-3 sm:p-4 lg:p-6 glass-card hover-lift animate-scale-in border-border/20"
                   style={{animationDelay: `${index * 0.1}s`}}
                 >
                   <a 
                     href={item.href}
-                    className="flex items-start sm:items-center space-x-3 sm:space-x-4 group"
+                    className="flex items-center space-x-3 sm:space-x-4 group w-full"
                   >
-                    <div className="p-2 sm:p-3 rounded-lg bg-gradient-to-r from-primary/20 to-accent/20 flex-shrink-0">
-                      <item.icon className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
+                    <div className="p-2 sm:p-2.5 lg:p-3 rounded-lg bg-gradient-to-r from-primary/20 to-accent/20 flex-shrink-0">
+                      <item.icon className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5 text-primary" />
                     </div>
-                    <div>
-                      <h4 className="font-medium text-sm sm:text-base group-hover:text-primary transition-colors">
+                    <div className="min-w-0 flex-1">
+                      <h4 className="font-medium text-xs sm:text-sm lg:text-base group-hover:text-primary transition-colors">
                         {item.title}
                       </h4>
-                      <p className="text-muted-foreground text-xs sm:text-sm">{item.value}</p>
+                      <p className="text-muted-foreground text-xs sm:text-sm truncate">{item.value}</p>
                     </div>
                   </a>
                 </Card>
@@ -153,10 +153,10 @@ export const Contact = () => {
           </div>
           
           {/* Contact Form */}
-          <Card className="p-5 sm:p-6 md:p-8 glass-card border-border/20">
-            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+          <Card className="p-4 sm:p-5 lg:p-6 xl:p-8 glass-card border-border/20">
+            <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4 lg:space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-1.5 sm:mb-2">
+                <label htmlFor="name" className="block text-xs sm:text-sm font-medium mb-1 sm:mb-1.5 lg:mb-2">
                   Your Name
                 </label>
                 <Input
@@ -166,12 +166,12 @@ export const Contact = () => {
                   onChange={handleChange}
                   placeholder="John Doe"
                   required
-                  className="glass-card border-border/20 focus:border-primary h-10 sm:h-11 text-sm sm:text-base"
+                  className="glass-card border-border/20 focus:border-primary h-9 sm:h-10 lg:h-11 text-sm"
                 />
               </div>
               
               <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-1.5 sm:mb-2">
+                <label htmlFor="email" className="block text-xs sm:text-sm font-medium mb-1 sm:mb-1.5 lg:mb-2">
                   Email Address
                 </label>
                 <Input
@@ -182,12 +182,12 @@ export const Contact = () => {
                   onChange={handleChange}
                   placeholder="john@example.com"
                   required
-                  className="glass-card border-border/20 focus:border-primary h-10 sm:h-11 text-sm sm:text-base"
+                  className="glass-card border-border/20 focus:border-primary h-9 sm:h-10 lg:h-11 text-sm"
                 />
               </div>
               
               <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-1.5 sm:mb-2">
+                <label htmlFor="message" className="block text-xs sm:text-sm font-medium mb-1 sm:mb-1.5 lg:mb-2">
                   Message
                 </label>
                 <Textarea
@@ -196,9 +196,9 @@ export const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Tell me about your project..."
-                  rows={5}
+                  rows={4}
                   required
-                  className="glass-card border-border/20 focus:border-primary resize-none text-sm sm:text-base"
+                  className="glass-card border-border/20 focus:border-primary resize-none text-sm min-h-[80px] sm:min-h-[100px] lg:min-h-[120px]"
                 />
               </div>
               
@@ -206,16 +206,16 @@ export const Contact = () => {
                 type="submit" 
                 size="lg"
                 disabled={isSending}
-                className="w-full hero-glow bg-gradient-to-r from-primary to-accent hover:shadow-2xl text-sm sm:text-base h-11 sm:h-12 disabled:opacity-80 disabled:cursor-not-allowed"
+                className="w-full hero-glow bg-gradient-to-r from-primary to-accent hover:shadow-2xl text-sm lg:text-base h-10 sm:h-11 lg:h-12 disabled:opacity-80 disabled:cursor-not-allowed"
               >
                 {isSending ? (
                   <>
-                    <Loader2 className="w-4 h-4 sm:w-5 sm:h-5 mr-2 animate-spin" />
+                    <Loader2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5 mr-2 animate-spin" />
                     Sending...
                   </>
                 ) : (
                   <>
-                    <Send className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
+                    <Send className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5 mr-2" />
                     Send Message
                   </>
                 )}
