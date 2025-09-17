@@ -28,26 +28,26 @@ export const About = () => {
             About Me
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            I'm a passionate developer with expertise in modern web technologies. 
-            I love turning complex problems into simple, beautiful, and intuitive solutions.
+            I'm a passionate fresher developer eager to start my career in web development. 
+            I love learning new technologies and turning ideas into beautiful, functional applications.
           </p>
         </div>
         
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div className="space-y-6">
             <h3 className="text-2xl md:text-3xl font-semibold">
-              Building digital experiences with passion
+              Ready to contribute and grow in tech
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              With a strong foundation in both frontend and backend development, 
-              I specialize in creating web applications that not only look great 
-              but also perform exceptionally well. I'm constantly learning new 
-              technologies and staying up-to-date with industry trends.
+              As a fresh graduate with a strong foundation in web development, 
+              I've completed 3 personal projects that showcase my skills in React, 
+              Node.js, TypeScript, and Supabase. I'm excited to bring my enthusiasm 
+              and fresh perspective to a dynamic development team.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              When I'm not coding, you can find me exploring new design trends, 
-              contributing to open source projects, or mentoring fellow developers 
-              in the community.
+              I'm actively seeking placement opportunities where I can apply my technical 
+              skills, continue learning, and contribute to meaningful projects. My goal 
+              is to grow as a developer while delivering quality solutions.
             </p>
           </div>
           

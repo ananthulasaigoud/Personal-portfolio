@@ -6,28 +6,28 @@ import { ExternalLink, Github } from "lucide-react";
 export const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.",
-      tags: ["React", "Node.js", "MongoDB", "Stripe"],
-      liveUrl: "#",
-      githubUrl: "#",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop&crop=entropy&auto=format"
+      title: "Ananth Farms",
+      description: "A modern agricultural business website showcasing farm products and services. Built with React and modern web technologies for optimal user experience.",
+      tags: ["React", "Vite", "TypeScript", "Supabase"],
+      liveUrl: "http://ananthfarms.netlify.app/",
+      githubUrl: "https://github.com/ananthulasaigoud",
+      image: "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=500&h=300&fit=crop&crop=entropy&auto=format"
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management application built with React and Firebase. Real-time updates, team collaboration, and project tracking.",
-      tags: ["React", "Firebase", "TypeScript", "Tailwind"],
-      liveUrl: "#",
-      githubUrl: "#",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop&crop=entropy&auto=format"
+      title: "Ananth Delights",
+      description: "A delightful food service platform featuring menu displays and ordering functionality. Responsive design with modern UI/UX principles.",
+      tags: ["React", "Node.js", "Supabase", "Tailwind"],
+      liveUrl: "http://ananthdelights.netlify.app/",
+      githubUrl: "https://github.com/ananthulasaigoud",
+      image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&h=300&fit=crop&crop=entropy&auto=format"
     },
     {
-      title: "Weather Dashboard",
-      description: "A responsive weather application with location-based forecasts, interactive maps, and detailed weather analytics.",
-      tags: ["Vue.js", "API Integration", "Chart.js"],
-      liveUrl: "#",
-      githubUrl: "#",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop&crop=entropy&auto=format"
+      title: "TFI Attendance System",
+      description: "A comprehensive attendance management system for educational institutions. Features real-time tracking and reporting capabilities.",
+      tags: ["React", "TypeScript", "SQL", "Vite"],
+      liveUrl: "https://tfiattendance.netlify.app/",
+      githubUrl: "https://github.com/ananthulasaigoud",
+      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=300&fit=crop&crop=entropy&auto=format"
     }
   ];
 
@@ -118,7 +118,7 @@ export const Projects = () => {
             className="glass-card hover:bg-primary/20"
             asChild
           >
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/ananthulasaigoud" target="_blank" rel="noopener noreferrer">
               <Github className="w-5 h-5 mr-2" />
               View All Projects
             </a>

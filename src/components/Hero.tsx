@@ -29,7 +29,7 @@ export const Hero = () => {
             <span className="gradient-text">Ananthula Sai</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Full Stack Developer & UI/UX Enthusiast crafting digital experiences that make a difference
+            Blending design, code, and AI to create seamless digital experiences.
           </p>
         </div>
         
@@ -45,13 +45,13 @@ export const Hero = () => {
         
         {/* Social Links */}
         <div className="flex justify-center space-x-6 mb-16">
-          <a href="#" className="p-3 rounded-full glass-card hover:bg-primary/20 transition-all duration-300 hover-lift">
+          <a href="https://github.com/ananthulasaigoud" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full glass-card hover:bg-primary/20 transition-all duration-300 hover-lift">
             <Github className="w-6 h-6" />
           </a>
-          <a href="#" className="p-3 rounded-full glass-card hover:bg-primary/20 transition-all duration-300 hover-lift">
+          <a href="https://www.linkedin.com/in/ananthulasai/" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full glass-card hover:bg-primary/20 transition-all duration-300 hover-lift">
             <Linkedin className="w-6 h-6" />
           </a>
-          <a href="#" className="p-3 rounded-full glass-card hover:bg-primary/20 transition-all duration-300 hover-lift">
+          <a href="mailto:saigoud17092003@gmail.com" className="p-3 rounded-full glass-card hover:bg-primary/20 transition-all duration-300 hover-lift">
             <Mail className="w-6 h-6" />
           </a>
         </div>

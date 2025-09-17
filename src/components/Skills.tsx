@@ -5,17 +5,17 @@ export const Skills = () => {
   const skillCategories = [
     {
       title: "Frontend",
-      skills: ["React", "Vue.js", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "SASS"],
+      skills: ["HTML5", "CSS3", "JavaScript", "React (Basics)", "TypeScript", "Tailwind CSS"],
       color: "from-primary/20 to-accent/20"
     },
     {
-      title: "Backend",
-      skills: ["Node.js", "Express", "Python", "Django", "PostgreSQL", "MongoDB", "Redis", "REST APIs"],
+      title: "Backend & Database",
+      skills: ["Node.js", "SQL", "Supabase", "REST APIs"],
       color: "from-accent/20 to-primary/20"
     },
     {
       title: "Tools & Technologies",
-      skills: ["Git", "Docker", "AWS", "Firebase", "Webpack", "Vite", "Jest", "Linux"],
+      skills: ["Git", "GitHub", "VS Code", "Vite", "Netlify"],
       color: "from-primary/20 to-secondary/20"
     }
   ];
@@ -66,16 +66,16 @@ export const Skills = () => {
         <div className="mt-16 text-center">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="space-y-2">
-              <div className="text-3xl md:text-4xl font-bold gradient-text">2+</div>
-              <div className="text-muted-foreground">Years Experience</div>
+              <div className="text-3xl md:text-4xl font-bold gradient-text">Fresher</div>
+              <div className="text-muted-foreground">Ready to Start</div>
             </div>
             <div className="space-y-2">
-              <div className="text-3xl md:text-4xl font-bold gradient-text">20+</div>
+              <div className="text-3xl md:text-4xl font-bold gradient-text">3</div>
               <div className="text-muted-foreground">Projects Completed</div>
             </div>
             <div className="space-y-2">
-              <div className="text-3xl md:text-4xl font-bold gradient-text">15+</div>
-              <div className="text-muted-foreground">Technologies Mastered</div>
+              <div className="text-3xl md:text-4xl font-bold gradient-text">10+</div>
+              <div className="text-muted-foreground">Technologies Learning</div>
             </div>
           </div>
         </div>

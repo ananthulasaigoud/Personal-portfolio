@@ -31,19 +31,19 @@ export const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "your.email@example.com",
-      href: "mailto:your.email@example.com"
+      value: "saigoud17092003@gmail.com",
+      href: "mailto:saigoud17092003@gmail.com"
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+91 6305579139",
+      href: "tel:+916305579139"
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "Your City, Country",
+      value: "Nalgonda, India",
       href: "#"
     }
   ];
